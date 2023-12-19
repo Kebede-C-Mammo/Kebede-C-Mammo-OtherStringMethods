@@ -1,3 +1,5 @@
+
+
 /**
  * Official String documentation: https://docs.oracle.com/javase/7/docs/api/java/lang/String.html
  */
@@ -11,7 +13,10 @@ public class OtherStringMethods {
      * @return
      */
     public String partOfString(String s, int start, int end){
-        return "";
+
+        String subStr = s.substring(start, end);
+
+        return subStr;
     }
 
     /**
@@ -26,7 +31,10 @@ public class OtherStringMethods {
      * and 0 if s1 is equivalent to s2.
      */
     public int compareLexigraphically(String s1, String s2) {
-        return 0;
+
+        int outcome = s1.compareTo(s2);
+
+        return outcome;
     }
 
     /**
@@ -39,6 +47,9 @@ public class OtherStringMethods {
      * @return an array of Strings that represent s1 split by splitAround.
      */
     public String[] splitStringIntoMultipleStrings(String s1, String splitAround) {
-        return null;
+
+         String[] splitedSptings = s1.split(splitAround);
+
+        return splitedSptings;
     }
 }
